@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url(/IDroid.otf);
+}
+
+*{
+    margin: auto;
+    padding: 0px;
+    max-width: 800px;
+    min-width: 320px;
+}
+
+
+:root{
+    --cor1:#c5ebd6;
+    --cor2:#83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+/* FONTES */
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em; 
+    font-size: 1em; 
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to top, #1a5c37, #2fa866, #83e1ad);
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 30px;
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    text-shadow: 1px 1px 1px grey;
+    text-align: center;
+}
+
+header > h1{
+    font-family: Bebas Neue, cursive, sans-serif;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px grey;
+}
+
+nav{
+    text-align: left;
+    padding: 30px 10px 10px 10px;
+    margin: 10px 10px 0px 10px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+/* EM ESPECÍFICO, PARA DELIMITAR O ESPAÇAMENTO ENTRE OS ELEMENTOS "a", EU CRIO UM nav > a{} PARA PODER COLOCAR PADDING E ESPAÇAR AS OPÇÕES DE MENU.*/
+
+nav > a{
+    padding: 10px;
+    /*PODEMOS COLOCAR ELEMENTOS DE TRANSIÇÃO TAMBÉM*/
+    transition-duration: .5s;
+}
+
+/* TAMBÉM POSSO COLOCAR A INTERAÇÃO COM HOOVER PARA DEIXAR MAIS INTUITIVA A OPÇÃO*/
+
+nav > a:hover{
+    background-color: #3ddc84;
+    color: #063d1e;
+    border-radius: 2px;
+}
+
+strong{
+    color:#1a5c37;
+    font-size: larger;
+    padding: 0px 6px;
+}
+
+article > h1{
+    font-family: android, cursive, sans-serif;
+    color: #1a5c37;
+}
+
+h2{
+    font-family: android, cursive, sans-serif;
+    color: #1a5c37;
+    background-image: linear-gradient(to right, #c5ebd6, white);
+    text-indent: 5px;
+}
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #063d1e;
+    color: #83e1ad;
+}
+
+main > img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #1a5c37;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+nav > a{
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+}
+
+footer{
+    background-color: #1a5c37;
+    text-align: center;
+    color: white;
+   }
+   footer a{
+    color: white;
+    font-weight: 400;
+    font-family: var(--fonte-padrao);
+   }
+
+   footer p{
+    text-align: center;
+    padding: 3px;
+   }
+   footer a:hover{
+    text-decoration: underline;
+    background-color: #83e1ad;
+    color: #1a5c37;
+   }
+
+.bugdroid{
+    display: block;
+    max-width: 350px;
+}
+
+.dan{
+    width: 70%;
+    display: block;
+}
+
+.irina{
+    width: 100%;
+    display: block;
+}
+
+aside{
+    background-color: #c5ebd6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+aside > ul{
+    padding: 10px;
+    list-style: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside > h3{
+    color: white;
+    background-color: #2fa866;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin: -20px -20px 0px -20px;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+    color: #1a5c37;
+}
+
+#video{
+    background-color: #063d1e;
+    margin: 0px -20px 20px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
